@@ -96,13 +96,13 @@ export default function Hero() {
             sizes="(max-width: 1024px) 100vw, 50vw"
             priority
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none"></div>
           {/* Floating Chip */}
           <motion.div 
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.5 }}
-            className="absolute bottom-md left-md glass-card border border-outline-variant/30 rounded-2xl p-sm flex items-center gap-sm animate-bounce" 
-            style={{ animationDuration: '3s' }}
+            className="absolute bottom-md left-md glass-card border border-outline-variant/30 rounded-2xl p-sm flex items-center gap-sm" 
           >
             <div className="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center">
               <span className="material-symbols-outlined text-primary text-2xl">home</span>

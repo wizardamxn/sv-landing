@@ -47,15 +47,17 @@ export default function RootLayout({
           <Footer />
           
           {/* SideNavBar (Floating Action Buttons) */}
-          <div className="fixed bottom-md right-md flex flex-col items-end gap-base z-50">
+          <div className="fixed bottom-20 md:bottom-md right-md flex flex-col items-end gap-base z-50">
             <Link
-              href="/contact"
+              href="tel:+919303127775"
               className="bg-surface text-on-surface rounded-full p-4 shadow-lg shadow-primary/20 hover:scale-110 hover:shadow-xl transition-all flex items-center justify-center border border-outline-variant/30"
             >
               <span className="material-symbols-outlined text-on-surface-variant">call</span>
             </Link>
             <Link
-              href="/contact"
+              href="https://wa.me/919303127775"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-primary-container text-on-primary-container rounded-full p-4 shadow-lg shadow-primary/20 hover:scale-110 hover:shadow-xl transition-all flex items-center justify-center"
             >
               <span className="material-symbols-outlined">chat</span>

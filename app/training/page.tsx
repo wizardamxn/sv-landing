@@ -9,37 +9,37 @@ export default function SolarTraining() {
   return (
     <main className="w-full overflow-hidden">
       {/* Hero Section */}
-      <section className="relative min-h-[819px] flex items-center pt-xl pb-xl overflow-hidden mt-16 md:mt-0">
+      <section className="relative min-h-[600px] flex items-center pt-xl pb-xl overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image 
             src="/images/solar_family_1783983635437.png"
             alt="Solar Training"
             fill
-            className="object-cover opacity-30"
+            className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-surface/90 via-surface/70 to-surface"></div>
         </div>
-        <div className="max-w-container-max mx-auto px-md md:px-gutter w-full relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
-          <div className="flex flex-col gap-sm animate-fade-in-up">
-            <span className="font-label-md text-label-md text-secondary-container uppercase tracking-wider font-bold">Learn. Install. Grow.</span>
-            <h1 className="font-display-lg-mobile md:font-display-lg text-primary leading-tight">5-Day Solar Business Practical Training</h1>
-            <p className="font-body-lg text-on-surface-variant max-w-[576px]">
+        <div className="max-w-container-max mx-auto px-md md:px-gutter w-full relative z-10 flex flex-col items-center text-center">
+          <div className="flex flex-col items-center gap-sm animate-fade-in-up max-w-[800px]">
+            <span className="font-label-md text-label-md text-secondary-container uppercase tracking-wider font-bold bg-surface-container-low/50 px-4 py-1 rounded-full backdrop-blur-sm">Learn. Install. Grow.</span>
+            <h1 className="font-display-lg-mobile md:font-display-lg text-primary leading-tight text-shadow-sm">5-Day Solar Business Practical Training</h1>
+            <p className="font-body-lg text-on-surface-variant max-w-[672px] bg-surface/80 p-4 rounded-xl backdrop-blur-md">
               Build your career in the booming solar industry with India&apos;s First Solar Cooperative Society. Hands-on experience and expert mentorship await.
             </p>
-            <div className="flex flex-wrap gap-xs mt-sm">
-              <span className="glass-card border border-outline-variant/30 px-4 py-2 rounded-full font-label-sm text-label-sm text-primary flex items-center gap-xs">
+            <div className="flex flex-wrap justify-center gap-xs mt-sm">
+              <span className="glass-card border border-outline-variant/30 px-4 py-2 rounded-full font-label-sm text-label-sm text-primary flex items-center gap-xs shadow-sm bg-surface/90">
                 <span className="material-symbols-outlined fill text-secondary-container text-sm">workspace_premium</span> Certificate of Participation
               </span>
-              <span className="glass-card border border-outline-variant/30 px-4 py-2 rounded-full font-label-sm text-label-sm text-primary flex items-center gap-xs">
+              <span className="glass-card border border-outline-variant/30 px-4 py-2 rounded-full font-label-sm text-label-sm text-primary flex items-center gap-xs shadow-sm bg-surface/90">
                 <span className="material-symbols-outlined fill text-secondary-container text-sm">restaurant</span> Breakfast &amp; Lunch Included
               </span>
-              <span className="glass-card border border-outline-variant/30 px-4 py-2 rounded-full font-label-sm text-label-sm text-primary flex items-center gap-xs">
+              <span className="glass-card border border-outline-variant/30 px-4 py-2 rounded-full font-label-sm text-label-sm text-primary flex items-center gap-xs shadow-sm bg-surface/90">
                 <span className="material-symbols-outlined fill text-secondary-container text-sm">build</span> Live Projects
               </span>
             </div>
             <div className="mt-md">
-              <GradientButton href="#register" className="flex items-center gap-xs">
+              <GradientButton href="#register" className="flex items-center gap-xs text-lg px-8 py-3 shadow-lg hover:scale-105">
                 Register for Training <span className="material-symbols-outlined">arrow_forward</span>
               </GradientButton>
             </div>
@@ -131,6 +131,25 @@ export default function SolarTraining() {
               </div>
             </form>
           </GlassCard>
+        </div>
+      </section>
+
+      {/* CTA Band */}
+      <section className="max-w-container-max mx-auto px-md mb-xl animate-fade-in-up" style={{ animationDelay: '300ms' }}>
+        <div className="bg-[image:var(--background-image-solar-gradient)] rounded-xl p-xl flex flex-col md:flex-row items-center justify-between shadow-lg relative overflow-hidden">
+          {/* Decorative Elements */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4"></div>
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-secondary/20 rounded-full blur-2xl translate-y-1/4 -translate-x-1/4"></div>
+          
+          <div className="relative z-10 mb-md md:mb-0 text-center md:text-left">
+            <h2 className="font-headline-md text-headline-md text-on-primary mb-xs">Got questions about the training?</h2>
+            <p className="font-body-md text-body-md text-on-primary/90">Our team is here to help you get started on your solar journey.</p>
+          </div>
+          <div className="relative z-10 flex gap-4">
+            <GradientButton href="/contact" className="!bg-surface !text-primary hover:scale-102 transition-transform duration-200 shadow-none !border-0 whitespace-nowrap">
+              Contact Us
+            </GradientButton>
+          </div>
         </div>
       </section>
     </main>

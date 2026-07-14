@@ -10,7 +10,7 @@ interface SectionHeadingProps {
 
 export default function SectionHeading({ title, subtitle, centered = true }: SectionHeadingProps) {
   return (
-    <div className={`mb-xl ${centered ? "text-center" : ""}`}>
+    <div className={`mb-lg ${centered ? "text-center" : ""}`}>
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

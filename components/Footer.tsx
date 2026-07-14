@@ -54,24 +54,24 @@ export default function Footer() {
           <h4 className="font-label-md text-label-md text-surface-bright font-bold mb-2 uppercase tracking-wider">Contact Us</h4>
           <p className="font-body-md text-body-md text-surface-variant flex items-start gap-2">
             <span className="material-symbols-outlined text-secondary-container text-sm mt-1">location_on</span>
-            <span>123 Solar Park Avenue, Indore, MP 452001</span>
+            <span>Sahakarita Bhavan, in front of Shakti Dairy, Nutan Nagar, Khargone 451001.</span>
           </p>
           <p className="font-body-md text-body-md text-surface-variant flex items-center gap-2 mt-2">
             <span className="material-symbols-outlined text-secondary-container text-sm">call</span>
-            <span>+91 9303127775</span>
+            <a href="tel:+919303127775" className="hover:text-secondary-container transition-colors">+91 9303127775</a>
           </p>
         </div>
       </div>
       
       <div className="max-w-container-max mx-auto px-gutter mt-lg pt-md border-t border-surface-variant/20 flex flex-col md:flex-row justify-between items-center gap-sm">
         <p className="font-body-md text-body-md text-surface-variant text-sm">
-          © 2024 Solar Power Vistar Sahakari Sanstha Maryadit. All rights reserved.
+          © 2025 Solar Power Vistar Sahakari Sanstha Maryadit. All rights reserved.
         </p>
         <div className="flex gap-sm">
-          <Link href="#" className="text-surface-variant hover:text-secondary-container transition-colors">
-            <span className="material-symbols-outlined">share</span>
+          <Link href="https://wa.me/919303127775" target="_blank" rel="noopener noreferrer" className="text-surface-variant hover:text-secondary-container transition-colors">
+            <span className="material-symbols-outlined">chat</span>
           </Link>
-          <Link href="#" className="text-surface-variant hover:text-secondary-container transition-colors">
+          <Link href="mailto:solarcooperativesociety@gmail.com" className="text-surface-variant hover:text-secondary-container transition-colors">
             <span className="material-symbols-outlined">mail</span>
           </Link>
         </div>

@@ -19,9 +19,25 @@ export default function ProjectsGallery() {
           <h1 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-md">
             Projects &amp; <span className="text-solar-gradient">Gallery</span>
           </h1>
-          <p className="font-body-lg text-body-lg text-on-surface-variant max-w-[672px] mx-auto">
+          <p className="font-body-lg text-body-lg text-on-surface-variant max-w-[672px] mx-auto mb-6">
             Real residential solar installations across Madhya Pradesh. Witness the transformation to sustainable living through our community of forward-thinking homeowners.
           </p>
+          <div className="flex justify-center items-center gap-8 mt-4 pt-4 border-t border-outline-variant/30">
+            <div className="flex flex-col items-center">
+              <span className="font-display-lg text-3xl text-primary font-bold">500+</span>
+              <span className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Projects Completed</span>
+            </div>
+            <div className="w-px h-12 bg-outline-variant/30 hidden sm:block"></div>
+            <div className="flex flex-col items-center">
+              <span className="font-display-lg text-3xl text-primary font-bold">1.5MW+</span>
+              <span className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Installed Capacity</span>
+            </div>
+            <div className="w-px h-12 bg-outline-variant/30 hidden sm:block"></div>
+            <div className="flex flex-col items-center">
+              <span className="font-display-lg text-3xl text-primary font-bold">100%</span>
+              <span className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Happy Customers</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -136,9 +152,9 @@ export default function ProjectsGallery() {
 
       {/* CTA Band */}
       <section className="max-w-container-max mx-auto px-md mb-xl animate-fade-in-up" style={{ animationDelay: '700ms' }}>
-        <div className="solar-gradient rounded-xl p-xl flex flex-col md:flex-row items-center justify-between shadow-lg relative overflow-hidden">
+        <div className="bg-[image:var(--background-image-solar-gradient)] rounded-xl p-xl flex flex-col md:flex-row items-center justify-between shadow-lg relative overflow-hidden">
           {/* Decorative Elements */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4"></div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4"></div>
           <div className="absolute bottom-0 left-0 w-48 h-48 bg-secondary/20 rounded-full blur-2xl translate-y-1/4 -translate-x-1/4"></div>
           
           <div className="relative z-10 mb-md md:mb-0 text-center md:text-left">
@@ -146,9 +162,9 @@ export default function ProjectsGallery() {
             <p className="font-body-md text-body-md text-on-primary/90">Join hundreds of homeowners saving on their energy bills.</p>
           </div>
           <div className="relative z-10">
-            <button className="glass-card border border-white/30 font-label-md text-label-md text-primary px-lg py-sm rounded-full hover:scale-102 transition-transform duration-200 hover:shadow-lg whitespace-nowrap">
+            <GradientButton href="/contact" className="!bg-surface !text-primary hover:scale-102 transition-transform duration-200 shadow-none !border-0 whitespace-nowrap">
               Book Your Free Site Visit
-            </button>
+            </GradientButton>
           </div>
         </div>
       </section>

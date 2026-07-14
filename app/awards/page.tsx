@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 
 export default function AwardsAchievements() {
   return (
-    <main className="flex-1 w-full max-w-container-max mx-auto px-md md:px-gutter mt-20 md:mt-0 overflow-hidden">
+    <main className="flex-1 w-full max-w-container-max mx-auto px-md md:px-gutter overflow-hidden">
       {/* Hero Section */}
-      <section className="relative w-full rounded-xl overflow-hidden mt-sm md:mt-lg mb-xl min-h-[614px] flex items-center shadow-lg group">
+      <section className="relative w-full rounded-xl overflow-hidden mt-sm md:mt-lg mb-xl min-h-[400px] flex items-center shadow-lg group">
         <Image 
           src="/images/solar_farm_1783983615127.png"
           alt="Awards Background"
@@ -134,7 +134,7 @@ export default function AwardsAchievements() {
           </div>
           <div className="relative">
             {/* Track */}
-            <div className="absolute left-[15px] md:left-0 md:top-[15px] w-0.5 h-full md:w-full md:h-0.5 bg-outline-variant/30 rounded-full z-0"></div>
+            <div className="absolute left-[15px] md:left-[16px] md:top-[16px] w-0.5 h-full md:w-[calc(100%-32px)] md:h-0.5 bg-outline-variant/30 rounded-full z-0"></div>
             
             <div className="flex flex-col md:flex-row gap-8 md:gap-4 justify-between relative z-10">
               {/* Step 1 */}
@@ -187,7 +187,7 @@ export default function AwardsAchievements() {
 
       {/* CTA Band */}
       <section className="px-md md:px-0 py-xl mb-xl animate-fade-in-up" style={{ animationDelay: '300ms' }}>
-        <div className="bg-gradient-to-br from-primary-container to-secondary-container rounded-2xl p-8 md:p-12 text-center text-on-primary relative overflow-hidden shadow-xl">
+        <div className="bg-[image:var(--background-image-solar-gradient)] rounded-2xl p-8 md:p-12 text-center text-on-primary relative overflow-hidden shadow-xl">
           {/* Decorative background blur */}
           <div className="absolute -top-24 -left-24 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
           <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-black/10 rounded-full blur-3xl"></div>
@@ -198,10 +198,10 @@ export default function AwardsAchievements() {
             <p className="font-body-md text-body-md text-on-primary/90 mb-4">Be part of a trusted, recognized community bringing clean energy to thousands.</p>
             
             <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
-              <GradientButton href="/contact" className="!bg-[none] !bg-surface !text-primary hover:scale-105 shadow-lg">
+              <GradientButton href="/contact" className="!bg-none !bg-surface !text-primary hover:scale-105 shadow-lg">
                 Get Started
               </GradientButton>
-              <GradientButton href="/contact" className="!bg-[none] !bg-transparent border-2 border-white/50 !text-white hover:!bg-white/10 !shadow-none">
+              <GradientButton href="/contact" className="!bg-none !bg-transparent border-2 border-white/50 !text-white hover:!bg-white/10 !shadow-none">
                 Contact Us
               </GradientButton>
             </div>

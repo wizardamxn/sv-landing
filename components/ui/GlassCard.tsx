@@ -17,7 +17,7 @@ export default function GlassCard({ children, className = "", delay = 0, hover =
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, delay }}
       whileHover={hover ? { y: -5 } : {}}
-      className={`glass-card border border-outline-variant/30 rounded-xl p-md shadow-sm transition-shadow hover:shadow-lg ${className}`}
+      className={`glass-card rounded-2xl ${/(?:^|\s)p(?:[xytrbl])?-/.test(className) ? '' : 'p-md'} shadow-sm transition-shadow hover:shadow-lg ${className}`}
     >
       {children}
     </motion.div>

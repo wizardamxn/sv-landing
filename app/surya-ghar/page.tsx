@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 
 export default function PMSuryaGhar() {
   return (
-    <main className="flex-grow pt-[80px] overflow-hidden">
+    <main className="flex-grow overflow-hidden">
       {/* Hero Section */}
-      <section className="relative py-xl overflow-hidden min-h-[819px] flex items-center">
+      <section className="relative py-xl overflow-hidden min-h-[600px] flex items-center">
         {/* Background Decorative Elements */}
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           <div className="absolute top-[-10%] right-[-5%] w-[40vw] h-[40vw] rounded-full bg-secondary-fixed opacity-30 blur-3xl mix-blend-multiply"></div>
@@ -248,7 +248,7 @@ export default function PMSuryaGhar() {
 
       {/* Assistance Process */}
       <section className="py-xl bg-surface relative overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#0b5ed7 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
+        <div className="absolute inset-0 z-0 opacity-10 pointer-events-none" style={{ backgroundImage: 'radial-gradient(var(--color-primary-container) 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
         <div className="max-w-container-max mx-auto px-gutter relative z-10">
           <SectionHeading 
             title="Our Seamless Assistance Process" 
@@ -256,7 +256,7 @@ export default function PMSuryaGhar() {
           />
           <GlassCard hover={false} className="max-w-[768px] mx-auto p-8 relative">
             {/* Vertical Line */}
-            <div className="absolute left-[39px] md:left-[47px] top-12 bottom-12 w-0.5 bg-outline-variant/30"></div>
+            <div className="absolute left-[55px] top-12 bottom-12 w-0.5 bg-outline-variant/30"></div>
             <ul className="flex flex-col gap-6 relative">
               <li className="flex items-center gap-6">
                 <div className="w-12 h-12 rounded-full bg-surface-container-highest border-2 border-primary flex items-center justify-center text-primary z-10 shrink-0">

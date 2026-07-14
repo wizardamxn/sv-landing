@@ -53,7 +53,7 @@ export default function YoungEntrepreneurs() {
       {/* Story Block */}
       <section className="py-xl px-md bg-surface-container-low">
         <div className="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
-          <GlassCard hover={false} delay={0.2} className="order-2 md:order-1 relative w-full h-[400px] rounded-2xl overflow-hidden p-2 !p-2">
+          <GlassCard hover={false} delay={0.2} className="order-2 md:order-1 relative w-full h-[400px] rounded-2xl overflow-hidden p-2">
             <div className="w-full h-full rounded-xl overflow-hidden relative">
               <Image 
                 className="object-cover transition-transform duration-700 hover:scale-105" 
@@ -80,11 +80,34 @@ export default function YoungEntrepreneurs() {
         </div>
       </section>
 
+      {/* Stats Section */}
+      <section className="py-xl px-md">
+        <div className="max-w-container-max mx-auto grid grid-cols-2 md:grid-cols-4 gap-md">
+          <GlassCard delay={0.1} className="text-center p-lg flex flex-col items-center justify-center">
+            <h3 className="font-display-lg text-4xl md:text-5xl text-primary font-bold mb-2">500+</h3>
+            <p className="font-label-md text-label-md text-on-surface-variant font-bold uppercase tracking-wider">Entrepreneurs Trained</p>
+          </GlassCard>
+          <GlassCard delay={0.2} className="text-center p-lg flex flex-col items-center justify-center">
+            <h3 className="font-display-lg text-4xl md:text-5xl text-solar-orange font-bold mb-2">52</h3>
+            <p className="font-label-md text-label-md text-on-surface-variant font-bold uppercase tracking-wider">Districts Covered</p>
+          </GlassCard>
+          <GlassCard delay={0.3} className="text-center p-lg flex flex-col items-center justify-center">
+            <h3 className="font-display-lg text-4xl md:text-5xl text-primary font-bold mb-2">₹5Cr+</h3>
+            <p className="font-label-md text-label-md text-on-surface-variant font-bold uppercase tracking-wider">Business Generated</p>
+          </GlassCard>
+          <GlassCard delay={0.4} className="text-center p-lg flex flex-col items-center justify-center">
+            <h3 className="font-display-lg text-4xl md:text-5xl text-solar-orange font-bold mb-2">100%</h3>
+            <p className="font-label-md text-label-md text-on-surface-variant font-bold uppercase tracking-wider">Mentorship Support</p>
+          </GlassCard>
+        </div>
+      </section>
+
       {/* CTA Band */}
       <section className="py-xl px-md animate-fade-in-up" style={{ animationDelay: '300ms' }}>
-        <div className="max-w-container-max mx-auto rounded-3xl p-xl solar-gradient shadow-2xl flex flex-col md:flex-row items-center justify-between gap-lg relative overflow-hidden">
+        <div className="max-w-container-max mx-auto rounded-3xl p-xl bg-[image:var(--background-image-solar-gradient)] shadow-2xl flex flex-col md:flex-row items-center justify-between gap-lg relative overflow-hidden">
           {/* Abstract overlay for CTA */}
-          <div className="absolute inset-0 bg-white/10" style={{ backgroundImage: 'radial-gradient(circle at 20% 150%, rgba(255,255,255,0.3) 0%, transparent 50%)' }}></div>
+          <div className="absolute top-0 right-0 w-96 h-96 bg-white/20 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-black/10 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2"></div>
           
           <div className="flex flex-col gap-sm relative z-10 max-w-[672px] text-on-primary">
             <h2 className="font-headline-md text-headline-md font-bold text-on-primary">Ready to Accelerate Your Growth?</h2>
@@ -93,7 +116,7 @@ export default function YoungEntrepreneurs() {
             </p>
           </div>
           
-          <GradientButton href="/training" className="relative z-10 !bg-[none] !bg-white !text-primary-container font-bold hover:scale-105 shadow-xl whitespace-nowrap">
+          <GradientButton href="/training" className="relative z-10 !bg-none !bg-white !text-primary-container font-bold hover:scale-105 shadow-xl whitespace-nowrap">
             Join the 5-Day Solar Business Training
           </GradientButton>
         </div>

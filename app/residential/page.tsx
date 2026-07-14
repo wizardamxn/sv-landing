@@ -19,7 +19,7 @@ export default function ResidentialSolar() {
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-secondary-container/10 rounded-full blur-[100px] -z-10 translate-x-1/3 -translate-y-1/3"></div>
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-primary-container/10 rounded-full blur-[100px] -z-10 -translate-x-1/3 translate-y-1/3"></div>
         
-        <div className="max-w-container-max mx-auto px-md grid md:grid-cols-2 gap-xl items-center">
+        <div className="max-w-container-max mx-auto px-gutter grid md:grid-cols-2 gap-xl items-center">
           <div className="space-y-sm animate-fade-in-up">
             <span className="inline-block px-sm py-xs bg-primary-container/10 text-primary-container rounded-full font-label-sm text-label-sm uppercase tracking-wider">
               Our Services
@@ -37,7 +37,7 @@ export default function ResidentialSolar() {
           </div>
           
           <div className="relative animate-fade-in-up" style={{ animationDelay: '200ms' }}>
-            <div className="glass-card border border-outline-variant/30 rounded-[2rem] p-xs relative z-10 transform md:rotate-2 hover:rotate-0 transition-transform duration-500">
+            <div className="glass-card border border-outline-variant/30 rounded-[2rem] p-xs relative z-10">
               <div className="w-full h-[400px] md:h-[500px] rounded-xl overflow-hidden relative">
                 <Image 
                   className="object-cover"
@@ -65,7 +65,7 @@ export default function ResidentialSolar() {
 
       {/* Services Grid */}
       <section className="py-xl bg-surface">
-        <div className="max-w-container-max mx-auto px-md">
+        <div className="max-w-container-max mx-auto px-gutter">
           <SectionHeading 
             title="Comprehensive Solar Services" 
             subtitle="From initial assessment to ongoing support, we handle every aspect of your solar journey."
@@ -73,7 +73,7 @@ export default function ResidentialSolar() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md">
             {/* Service Cards */}
-            <GlassCard delay={0.1} className="group cursor-pointer">
+            <GlassCard delay={0.1} className="group">
               <div className="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center mb-sm group-hover:bg-primary-container/20 transition-colors">
                 <span className="material-symbols-outlined fill text-primary-container text-2xl">assignment</span>
               </div>
@@ -81,7 +81,7 @@ export default function ResidentialSolar() {
               <p className="font-body-md text-body-md text-on-surface-variant text-sm">Detailed inspection of roof condition and shading analysis.</p>
             </GlassCard>
             
-            <GlassCard delay={0.15} className="group cursor-pointer">
+            <GlassCard delay={0.15} className="group">
               <div className="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center mb-sm group-hover:bg-primary-container/20 transition-colors">
                 <span className="material-symbols-outlined fill text-primary-container text-2xl">analytics</span>
               </div>
@@ -89,7 +89,7 @@ export default function ResidentialSolar() {
               <p className="font-body-md text-body-md text-on-surface-variant text-sm">Calculating your energy needs for optimal system sizing.</p>
             </GlassCard>
             
-            <GlassCard delay={0.2} className="group cursor-pointer">
+            <GlassCard delay={0.2} className="group">
               <div className="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center mb-sm group-hover:bg-primary-container/20 transition-colors">
                 <span className="material-symbols-outlined fill text-primary-container text-2xl">architecture</span>
               </div>
@@ -97,7 +97,7 @@ export default function ResidentialSolar() {
               <p className="font-body-md text-body-md text-on-surface-variant text-sm">Custom engineering to maximize yield and aesthetics.</p>
             </GlassCard>
             
-            <GlassCard delay={0.25} className="group cursor-pointer">
+            <GlassCard delay={0.25} className="group">
               <div className="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center mb-sm group-hover:bg-primary-container/20 transition-colors">
                 <span className="material-symbols-outlined fill text-primary-container text-2xl">construction</span>
               </div>
@@ -105,7 +105,7 @@ export default function ResidentialSolar() {
               <p className="font-body-md text-body-md text-on-surface-variant text-sm">Professional deployment by certified technicians.</p>
             </GlassCard>
             
-            <GlassCard delay={0.3} className="group cursor-pointer">
+            <GlassCard delay={0.3} className="group">
               <div className="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center mb-sm group-hover:bg-primary-container/20 transition-colors">
                 <span className="material-symbols-outlined fill text-primary-container text-2xl">fact_check</span>
               </div>
@@ -113,7 +113,7 @@ export default function ResidentialSolar() {
               <p className="font-body-md text-body-md text-on-surface-variant text-sm">Rigorous quality checks and system commissioning.</p>
             </GlassCard>
             
-            <GlassCard delay={0.35} className="group cursor-pointer">
+            <GlassCard delay={0.35} className="group">
               <div className="w-12 h-12 rounded-full bg-primary-container/10 flex items-center justify-center mb-sm group-hover:bg-primary-container/20 transition-colors">
                 <span className="material-symbols-outlined fill text-primary-container text-2xl">electric_meter</span>
               </div>
@@ -121,7 +121,7 @@ export default function ResidentialSolar() {
               <p className="font-body-md text-body-md text-on-surface-variant text-sm">End-to-end DISCOM liaison and grid integration assistance.</p>
             </GlassCard>
             
-            <GlassCard delay={0.4} className="group cursor-pointer lg:col-span-2 flex items-center gap-md">
+            <GlassCard delay={0.4} className="group lg:col-span-2 flex items-center gap-md">
               <div className="w-16 h-16 rounded-full bg-primary-container/10 flex items-center justify-center shrink-0 group-hover:bg-primary-container/20 transition-colors">
                 <span className="material-symbols-outlined fill text-primary-container text-3xl">support_agent</span>
               </div>
@@ -133,6 +133,18 @@ export default function ResidentialSolar() {
               </div>
             </GlassCard>
             
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-xl bg-surface-container-low border-t border-outline-variant/30">
+        <div className="max-w-container-max mx-auto px-gutter text-center">
+          <h2 className="text-3xl md:text-5xl font-display-lg text-on-surface mb-6">Ready to go solar?</h2>
+          <p className="text-lg text-on-surface-variant max-w-2xl mx-auto mb-8">Join the cooperative society and get the best residential solar solution with absolute transparency.</p>
+          <div className="flex justify-center gap-4">
+            <GradientButton href="/contact">Book Free Site Visit</GradientButton>
+            <GradientButton href="tel:+919303127775" className="!bg-[none] bg-surface text-primary border border-primary/30 shadow-none hover:shadow-md">Call Now</GradientButton>
           </div>
         </div>
       </section>

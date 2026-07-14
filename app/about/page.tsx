@@ -61,10 +61,10 @@ export default function AboutUs() {
               centered={false} 
             />
             <div className="w-16 h-1 bg-secondary-container rounded-full -mt-md mb-xs"></div>
-            <p className="font-body-lg text-body-lg text-on-surface-variant text-justify">
+            <p className="font-body-lg text-body-lg text-on-surface-variant text-left md:text-justify">
               Solar Power Vistar Sahakari Sanstha Maryadit stands as India&apos;s first cooperative society dedicated to rooftop solar energy. We believe that the transition to clean energy should not just be technological, but communal.
             </p>
-            <p className="font-body-md text-body-md text-on-surface-variant text-justify">
+            <p className="font-body-md text-body-md text-on-surface-variant text-left md:text-justify">
               By applying cooperative principles—transparency, mutual trust, and community development—we ensure that every member benefits. We don&apos;t just sell panels; we build long-term relationships and sustainable ecosystems. From initial consultation to lifetime maintenance, we provide end-to-end solutions that make adopting solar energy effortless and highly rewarding.
             </p>
             <ul className="space-y-sm mt-sm">
@@ -88,8 +88,8 @@ export default function AboutUs() {
       {/* 3. VISION & MISSION */}
       <section className="w-full bg-surface-container-low py-xl mt-xl relative overflow-hidden">
         {/* Decorative blur blobs */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-secondary-fixed-dim/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary-fixed-dim/30 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-secondary-fixed-dim/30 rounded-full blur-3xl translate-x-1/4 -translate-y-1/4 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary-fixed-dim/30 rounded-full blur-3xl -translate-x-1/4 translate-y-1/4 pointer-events-none"></div>
         
         <div className="max-w-container-max mx-auto px-gutter md:px-lg relative z-10">
           <SectionHeading 
@@ -156,7 +156,7 @@ export default function AboutUs() {
           <div className="flex flex-col md:flex-row items-center gap-lg relative z-10">
             <div className="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 rounded-full border-4 border-surface shadow-xl overflow-hidden relative">
               <Image 
-                alt="Himanshu Kushwah - CEO" 
+                alt="Representative placeholder for Himanshu Kushwah - CEO" 
                 className="object-cover" 
                 src="/images/solar_training_1783983645115.png"
                 fill
@@ -180,7 +180,7 @@ export default function AboutUs() {
       <section className="w-full solar-gradient py-lg">
         <div className="max-w-container-max mx-auto px-gutter text-center">
           <h2 className="font-headline-md text-headline-md text-on-primary font-bold tracking-wide">
-            solar — a need for future alternative energy.
+            Powering the Future, One Rooftop at a Time.
           </h2>
         </div>
       </section>

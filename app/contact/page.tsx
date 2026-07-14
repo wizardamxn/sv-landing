@@ -1,15 +1,24 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 import GlassCard from "../../components/ui/GlassCard";
 import SectionHeading from "../../components/ui/SectionHeading";
 import GradientButton from "../../components/ui/GradientButton";
 
 export default function ContactUs() {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitted(true);
+    setTimeout(() => setSubmitted(false), 3000);
+  };
+
   return (
     <main className="flex-grow w-full overflow-hidden">
       {/* Hero Section */}
-      <section className="pt-xl pb-lg px-md relative overflow-hidden mt-16 md:mt-0 min-h-[400px] flex items-center justify-center">
+      <section className="pt-xl pb-lg px-md relative overflow-hidden min-h-[400px] flex items-center justify-center">
         <div className="absolute inset-0 z-[-1] opacity-30">
           <Image 
             src="/images/solar_family_1783983635437.png"
@@ -33,7 +42,13 @@ export default function ContactUs() {
           {/* Left Column: Form */}
           <GlassCard hover={false} delay={0.1} className="p-lg relative z-10">
             <h2 className="font-headline-md text-headline-md mb-md text-on-surface">Book Your Free Site Visit</h2>
-            <form className="space-y-md" onSubmit={(e) => e.preventDefault()}>
+            {submitted ? (
+              <div className="bg-green-500/10 border border-green-500 text-green-700 dark:text-green-400 p-4 rounded-lg flex items-center gap-3">
+                <span className="material-symbols-outlined">check_circle</span>
+                <p>Thank you! Your request has been received. We will contact you shortly.</p>
+              </div>
+            ) : (
+            <form className="space-y-md" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-md">
                 <div>
                   <label className="block font-label-sm text-label-sm text-outline mb-xs" htmlFor="name">Name</label>
@@ -70,12 +85,13 @@ export default function ContactUs() {
                 <GradientButton type="submit" className="flex-1 font-semibold !w-full">
                   Book Free Site Visit
                 </GradientButton>
-                <GradientButton className="flex-1 !bg-[#25D366] !text-white flex items-center justify-center gap-xs font-semibold !w-full !shadow-none hover:scale-102 hover:!shadow-md transition-all">
+                <GradientButton className="flex-1 !bg-[#25D366] !text-white flex items-center justify-center gap-xs font-semibold !w-full !shadow-none hover:scale-102 hover:!shadow-md transition-all" onClick={() => window.open('https://wa.me/919303127775', '_blank')}>
                   <span className="material-symbols-outlined fill text-[20px]">chat</span>
                   WhatsApp Now
                 </GradientButton>
               </div>
             </form>
+            )}
           </GlassCard>
           
           {/* Right Column: Info Cards */}
@@ -117,9 +133,9 @@ export default function ContactUs() {
                 </div>
                 <div className="flex items-center gap-sm">
                   <span className="material-symbols-outlined fill text-primary">mail</span>
-                  <div>
+                  <div className="overflow-hidden">
                     <p className="font-label-sm text-label-sm text-outline">Email</p>
-                    <p className="font-body-md text-body-md text-on-surface truncate" title="solarcooperativesociety@gmail.com">solarcoop...</p>
+                    <p className="font-body-md text-body-md text-on-surface text-sm break-all">solarcooperativesociety@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-sm">
@@ -164,18 +180,21 @@ export default function ContactUs() {
       </section>
 
       {/* Map Section */}
-      <section className="w-full h-96 relative bg-surface-dim">
-        <Image 
-          src="/images/solar_family_1783983635437.png"
-          alt="Map of Madhya Pradesh"
-          fill
-          className="object-cover opacity-60"
-        />
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <GlassCard hover={false} className="p-md text-center pointer-events-auto shadow-lg">
-            <span className="material-symbols-outlined fill text-primary text-4xl mb-xs">map</span>
-            <p className="font-label-md text-label-md text-on-surface font-semibold">Serving Madhya Pradesh</p>
-          </GlassCard>
+      <section className="w-full relative bg-surface-dim py-xl">
+        <div className="max-w-container-max mx-auto px-gutter text-center">
+          <SectionHeading title="Visit Us" subtitle="Drop by our offices to discuss your solar transition." centered={true} />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-md mt-lg">
+            <GlassCard hover={false} className="p-md text-center shadow-lg bg-surface flex flex-col items-center justify-center min-h-[200px]">
+              <span className="material-symbols-outlined fill text-primary text-4xl mb-sm">map</span>
+              <h3 className="font-headline-sm text-headline-sm font-bold text-on-surface mb-2">Khargone Headquarters</h3>
+              <p className="font-body-md text-body-md text-on-surface-variant max-w-sm mx-auto">Sahakarita Bhavan, in front of Shakti Dairy, Nutan Nagar, Khargone 451001.</p>
+            </GlassCard>
+            <GlassCard hover={false} className="p-md text-center shadow-lg bg-surface flex flex-col items-center justify-center min-h-[200px]">
+              <span className="material-symbols-outlined fill text-primary text-4xl mb-sm">business</span>
+              <h3 className="font-headline-sm text-headline-sm font-bold text-on-surface mb-2">Indore Branch</h3>
+              <p className="font-body-md text-body-md text-on-surface-variant max-w-sm mx-auto">17 Aaditya Cosmopolitan, Lakhani Bypass, Mewar Road, Palda, Indore 452001.</p>
+            </GlassCard>
+          </div>
         </div>
       </section>
     </main>

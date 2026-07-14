@@ -13,14 +13,14 @@ export default function CooperativeSociety() {
   return (
     <main className="w-full overflow-hidden">
       {/* Page Hero */}
-      <section className="relative pt-xl pb-lg px-md md:px-gutter max-w-container-max mx-auto flex flex-col items-center text-center mt-16 md:mt-0 animate-fade-in-up">
+      <section className="relative pt-xl pb-lg px-md md:px-gutter max-w-container-max mx-auto flex flex-col items-center text-center animate-fade-in-up">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary-fixed-dim/40 via-surface to-surface"></div>
         <div className="flex items-center gap-xs font-label-sm text-label-sm text-on-surface-variant mb-md">
           <span className="hover:text-primary cursor-pointer transition-colors">Home</span>
           <span className="material-symbols-outlined fill text-[16px]">chevron_right</span>
           <span className="text-primary font-medium">Cooperative Society</span>
         </div>
-        <span className="font-label-md text-label-md text-[#F58220] uppercase tracking-widest mb-sm">Cooperative Model</span>
+        <span className="font-label-md text-label-md text-solar-orange uppercase tracking-widest mb-sm">Cooperative Model</span>
         <h1 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-md">What is a Cooperative Society?</h1>
         <p className="font-body-lg text-body-lg text-on-surface-variant max-w-[672px] mx-auto">Empowering communities through mutual cooperation and sustainable energy solutions.</p>
       </section>
@@ -62,66 +62,92 @@ export default function CooperativeSociety() {
             <div className="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary-container">
               <span className="material-symbols-outlined fill">groups</span>
             </div>
-            <h3 className="font-headline-sm text-headline-sm text-on-surface">Community-first approach</h3>
+            <div>
+              <h3 className="font-headline-sm text-headline-sm text-on-surface">Community-first approach</h3>
+              <p className="font-body-sm text-sm text-on-surface-variant mt-1">Profits are reinvested into the community for collective growth.</p>
+            </div>
           </GlassCard>
           <GlassCard delay={0.15} className="flex flex-col gap-sm items-start">
             <div className="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary-container">
               <span className="material-symbols-outlined fill">visibility</span>
             </div>
-            <h3 className="font-headline-sm text-headline-sm text-on-surface">Transparent pricing</h3>
+            <div>
+              <h3 className="font-headline-sm text-headline-sm text-on-surface">Transparent pricing</h3>
+              <p className="font-body-sm text-sm text-on-surface-variant mt-1">No hidden fees. You see exactly what you pay for.</p>
+            </div>
           </GlassCard>
           <GlassCard delay={0.2} className="flex flex-col gap-sm items-start">
             <div className="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary-container">
               <span className="material-symbols-outlined fill">handshake</span>
             </div>
-            <h3 className="font-headline-sm text-headline-sm text-on-surface">Long-term relationships</h3>
+            <div>
+              <h3 className="font-headline-sm text-headline-sm text-on-surface">Long-term relationships</h3>
+              <p className="font-body-sm text-sm text-on-surface-variant mt-1">We&apos;re your energy partners for the next 25 years.</p>
+            </div>
           </GlassCard>
           <GlassCard delay={0.25} className="flex flex-col gap-sm items-start">
             <div className="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary-container">
               <span className="material-symbols-outlined fill">verified</span>
             </div>
-            <h3 className="font-headline-sm text-headline-sm text-on-surface">Govt-registered org</h3>
+            <div>
+              <h3 className="font-headline-sm text-headline-sm text-on-surface">Govt-registered org</h3>
+              <p className="font-body-sm text-sm text-on-surface-variant mt-1">Fully compliant and recognized by state authorities.</p>
+            </div>
           </GlassCard>
           <GlassCard delay={0.3} className="flex flex-col gap-sm items-start">
             <div className="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary-container">
               <span className="material-symbols-outlined fill">solar_power</span>
             </div>
-            <h3 className="font-headline-sm text-headline-sm text-on-surface">Affordable rooftop solar</h3>
+            <div>
+              <h3 className="font-headline-sm text-headline-sm text-on-surface">Affordable rooftop solar</h3>
+              <p className="font-body-sm text-sm text-on-surface-variant mt-1">Wholesale equipment pricing passed directly to members.</p>
+            </div>
           </GlassCard>
           <GlassCard delay={0.35} className="flex flex-col gap-sm items-start">
             <div className="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary-container">
               <span className="material-symbols-outlined fill">eco</span>
             </div>
-            <h3 className="font-headline-sm text-headline-sm text-on-surface">Sustainable development</h3>
+            <div>
+              <h3 className="font-headline-sm text-headline-sm text-on-surface">Sustainable development</h3>
+              <p className="font-body-sm text-sm text-on-surface-variant mt-1">Building a greener future for our next generation.</p>
+            </div>
           </GlassCard>
           <GlassCard delay={0.4} className="flex flex-col gap-sm items-start">
             <div className="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary-container">
               <span className="material-symbols-outlined fill">school</span>
             </div>
-            <h3 className="font-headline-sm text-headline-sm text-on-surface">Youth empowerment</h3>
+            <div>
+              <h3 className="font-headline-sm text-headline-sm text-on-surface">Youth empowerment</h3>
+              <p className="font-body-sm text-sm text-on-surface-variant mt-1">Creating local green jobs and skill development programs.</p>
+            </div>
           </GlassCard>
           <GlassCard delay={0.45} className="flex flex-col gap-sm items-start">
             <div className="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary-container">
               <span className="material-symbols-outlined fill">lightbulb</span>
             </div>
-            <h3 className="font-headline-sm text-headline-sm text-on-surface">Renewable energy awareness</h3>
+            <div>
+              <h3 className="font-headline-sm text-headline-sm text-on-surface">Renewable energy awareness</h3>
+              <p className="font-body-sm text-sm text-on-surface-variant mt-1">Educating communities on the benefits of solar power.</p>
+            </div>
           </GlassCard>
           <GlassCard delay={0.5} className="flex flex-col gap-sm items-start">
             <div className="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary-container">
               <span className="material-symbols-outlined fill">sentiment_satisfied</span>
             </div>
-            <h3 className="font-headline-sm text-headline-sm text-on-surface">Customer satisfaction</h3>
+            <div>
+              <h3 className="font-headline-sm text-headline-sm text-on-surface">Customer satisfaction</h3>
+              <p className="font-body-sm text-sm text-on-surface-variant mt-1">Our members&apos; success is our only metric of success.</p>
+            </div>
           </GlassCard>
         </div>
       </section>
 
       {/* Quote Banner */}
       <section className="py-xl px-md md:px-gutter max-w-container-max mx-auto animate-fade-in-up" style={{ animationDelay: '400ms' }}>
-        <div className="solar-gradient rounded-3xl p-xl shadow-2xl flex items-center justify-center text-center relative overflow-hidden">
-          {/* A simple geometric pattern overlay instead of SVG data URI for cleaner React */}
-          <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_white_10%,_transparent_10%)]" style={{ backgroundSize: '20px 20px' }}></div>
-          <h2 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary relative z-10 max-w-4xl capitalize leading-tight">
-            &quot;Solar — a need for future alternative energy.&quot;
+        <div className="bg-surface-container rounded-3xl p-xl shadow-lg border border-outline-variant/30 flex items-center justify-center text-center relative overflow-hidden">
+          <span className="material-symbols-outlined text-[120px] text-primary/10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-12">format_quote</span>
+          <h2 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary relative z-10 max-w-4xl capitalize leading-tight">
+            &quot;Solar isn't just an alternative. It's the future we must build today.&quot;
           </h2>
         </div>
       </section>
@@ -133,7 +159,7 @@ export default function CooperativeSociety() {
           <GradientButton href="/contact">
             Get Free Quote
           </GradientButton>
-          <GradientButton href="/contact" className="!bg-[none] !bg-transparent border-[1.5px] border-primary !text-primary hover:!bg-primary/5 !shadow-none flex items-center gap-xs">
+          <GradientButton href="/contact" className="!bg-none !bg-transparent border-[1.5px] border-primary !text-primary hover:!bg-primary/5 !shadow-none flex items-center gap-xs">
             <span className="material-symbols-outlined fill text-[20px]">chat</span>
             WhatsApp Now
           </GradientButton>
